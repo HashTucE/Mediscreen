@@ -59,6 +59,7 @@ services:
       - "27018:27017"
     volumes:
       - notedb:/data/db
+      - notedbconfig:/data/configdb
       - ./script.js:/docker-entrypoint-initdb.d/script.js:ro
     networks:
       - medinet
@@ -102,6 +103,7 @@ services:
 
 volumes:
   notedb:
+  notedbconfig:
   patientdb:
 
 networks:
