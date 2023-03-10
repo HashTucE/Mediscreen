@@ -26,8 +26,6 @@ Medical webapp composed by the following microservices :
 
 # Install the project with the magic of Docker
 
-This is the faster and the easier way to use this project but I will show you below how to start the application without docker.
-
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Clone [Mediscreen](https://github.com/HashTucE/Mediscreen.git) on your local machine.
 3. Clone each of the 5 microservices above at the root of Mediscreen like this :
@@ -89,62 +87,19 @@ I recommend you to install it with [his](https://hub.docker.com/r/sonatype/nexus
 </p>
 
 
-# Prepare the Database for Patient
 
-- Install [MySQL](https://dev.mysql.com/downloads/mysql/)
-
-- Open a command prompt to start MySQL server :
-  - Enter this command replacing the `???` by your username : 
-    ```
-    mysql -u ??? -p
-    ```
-  - Type your password and press `enter` to start the server.
-  
-- Copy/paste SQL scripts :
-
-  - Use this [script](https://github.com/HashTucE/Patient/blob/main/src/main/resources/static/schema.sql) to create the datatbase.
-
-  - Use this [script](https://github.com/HashTucE/Patient/blob/main/src/main/resources/static/data.sql) to create an admin and a user.
-  
-  
-  # Prepare the Database for Note
-
-- Install [MongoDB](https://www.mongodb.com/docs/manual/administration/install-community/)
-
-- Open a command prompt to start the MongoDB shell :
-  - Enter this command to select your database : 
-    ```
-    https://www.mongodb.com/docs/manual/administration/install-community/
-    ```
-  - Type your password and press `enter` to start the server.
-  
-- Copy/paste SQL scripts :
-
-  - Use this [script](https://github.com/HashTucE/Patient/blob/main/src/main/resources/static/schema.sql) to create the datatbase.
-
-  - Use this [script](https://github.com/HashTucE/Patient/blob/main/src/main/resources/static/data.sql) to create an admin and a user.
+# Project Structure
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224289216-54e84251-12de-4559-8e5d-bf00b4d46267.png>
+</p>
 
 
-# Run the Application
-
-- The datasource is set to `src/main/resources/application.properties` : 
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/paymybuddy?serverTimezone=UTC
-```
-
-- Open a command prompt, once located to the root of the project, run the following command replacing `???` by your username and your password of datasource : 
-```
-mvn spring-boot:run -Dspring-boot.run.arguments="--spring.datasource.username=??? --spring.datasource.password=???"
-```
-- And finally open your browser to access to this URL : http://localhost:8080/
-- Then you can create a new account or use an existing from data script, ENJOY !
-- Stop the application in the command prompt with : `CTRL + C`
-
-# UML Diagram
-![uml](https://user-images.githubusercontent.com/95872501/209088546-ebcaa663-b75a-46ae-bece-fe31cd995b37.png)
 
 # JaCoCo Code Coverage
 ![Capture d’écran 2022-12-22 à 09 19 43](https://user-images.githubusercontent.com/95872501/209089621-20ac00aa-46ea-466f-98a9-ac8d7be3ecbf.png)
 
 # Technology Stack
-![Capture d’écran 2022-12-05 à 01 19 56](https://user-images.githubusercontent.com/95872501/205524881-6a809029-414e-4a1f-b339-15154421f01a.png)
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224289092-fa6f6430-fcaa-42a9-a6cb-10505ac7007c.png>
+</p>
+
