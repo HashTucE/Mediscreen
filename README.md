@@ -96,7 +96,25 @@ I recommend you to install it with [his](https://hub.docker.com/r/sonatype/nexus
 
 
 # JaCoCo Code Coverage
-![Capture d’écran 2022-12-22 à 09 19 43](https://user-images.githubusercontent.com/95872501/209089621-20ac00aa-46ea-466f-98a9-ac8d7be3ecbf.png)
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224291049-89ab3512-10df-4006-af61-78d42765efc6.png>
+</p>
+
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224291163-5eeb831c-e47b-4fac-b0a1-89e2e3bdbff4.png>
+</p>
+
+
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224291291-a5c11169-50e9-4e47-9c6f-a3710221dac7.png>
+</p>
+
+
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224291384-c99e972a-e7f0-408b-94f7-1d8b180e5e12.png>
+</p>
+
+
 
 # Technology Stack
 <p align="center">
