@@ -26,7 +26,7 @@ Medical webapp composed by the following microservices :
 
 # Install the project with the magic of Docker
 
-This is the faster and the easier way to use this project but I will show you above how to start the application without docker.
+This is the faster and the easier way to use this project but I will show you below how to start the application without docker.
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Clone [Mediscreen](https://github.com/HashTucE/Mediscreen.git) on your local machine.
@@ -34,6 +34,8 @@ This is the faster and the easier way to use this project but I will show you ab
 <p align="center">
   <img src=https://user-images.githubusercontent.com/95872501/224263030-d59df305-01d0-4e08-a57b-7c4ba3580a13.png>
 </p>
+If needed, don't forget to check the application.properties of Patient and the docker-compose.yml (patient.ms and patient.db) of Mediscreen to replace your credentials for MySQL.
+You can do the same thing for Note even if on this project I have not set any credentials.
 
 4. For all these microservices, generate a package as .jar running the following command to a prompt when you are located to the root of each project folder:
     ```
