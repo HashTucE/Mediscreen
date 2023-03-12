@@ -1,8 +1,6 @@
 services:
   patient.ms:
-    build:
-      context: ./patient
-      dockerfile: Dockerfile
+    image: hashtuce/patient:latest
     container_name: patient.ms
     environment:
       MYSQL_HOST: patient.db
@@ -36,9 +34,7 @@ services:
       - medinet
 
   note.ms:
-    build:
-      context: ./note
-      dockerfile: Dockerfile
+    image: hashtuce/note:latest
     container_name: note.ms
     environment:
       MONGODB_HOST: note.db
@@ -65,9 +61,7 @@ services:
       - medinet
 
   assessment.ms:
-    build:
-      context: ./assessment
-      dockerfile: Dockerfile
+    image: hashtuce/assessment:latest
     container_name: assessment.ms
     environment:
       PATIENT_HOST: patient.ms
@@ -84,9 +78,7 @@ services:
       - medinet
 
   front.ms:
-    build:
-      context: ./front
-      dockerfile: Dockerfile
+    image: hashtuce/front:latest
     container_name: front.ms
     environment:
       PATIENT_HOST: patient.ms
