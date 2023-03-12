@@ -68,7 +68,7 @@ services:
       NOTE_HOST: note.ms
       triggers.url: /app/triggers.txt
     volumes:
-      - /Users/hashtuce/Library/Mobile Documents/com~apple~CloudDocs/Projets/Projet 9/triggers.txt:/app/triggers.txt
+      - ./triggers.txt:/app/triggers.txt
     ports:
       - "8080:8080"
     depends_on:
