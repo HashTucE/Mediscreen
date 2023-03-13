@@ -26,12 +26,59 @@ Medical webapp composed by the following microservices :
 5. When all services are operationals, you should be able to access to [Mediscreen App](http://localhost:8083/home) 
 
 
+# What you can do
+
+- Browse the list of registered patients.
+- Create/update a patient with warning message when trying to validate empty mandatory fields.
+- Delete a patient.
+- Access to the record of a patient when clicking on his last name with his assessment and his visit's notes.
+- The assessment change dynamically depending on trigger's words containing into the triggers.txt.
+- Create/update a note with warning message when trying to validate empty mandatory field.
+- Delete a note.
+
+# How to modified triggers list 
+
+1. First you need the id of the assessment.ms's container and there is 2 ways to find it :
+- Execute the following command into a prompt :
+    ```
+    docker ps
+    ```
+- Or you can find it below "assessment.ms" container into Docker Desktop :
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/95872501/224640844-edf8b9f5-097e-469a-a7b9-5f93f3d3da2b.png>
+</p>
+
+2. Execute this command to access to the shell of assessment.ms's container :
+    ```
+    docker exec -it [replace by assessment_id] /bin/sh
+    ```
+3. Execute this command to access to triggers.txt folder :
+    ```
+    cd app/
+    ```
+3. Execute this command to open triggers.txt with "vi" editor :
+    ```
+    vi triggers.txt
+    ```
+4. Make your modifications :
+- Use the `arrow keys` to navigate through the file.
+- Press `i` to enter insert mode and start editing the file.
+- Make the necessary changes.
+- Press the `Esc` key to return to command mode.
+- Type `:wq` to save changes and exit the "vi" editor.
+- Press `Enter` to run the command.
+
+    Extra information, there are 3 ways to quit the "vi" editor :
+    - Type `:q` to exit the editor if you haven't made any changes.
+    - type `:wq` to save the changes and exit the editor.
+    - type `:q!` to exit the editor without saving changes.
 
 
 # Home of Mediscreen App
 <p align="center">
   <img src=https://user-images.githubusercontent.com/95872501/224282867-7c9e5771-60ac-4471-8fef-8a19eac6606a.png>
 </p>
+
 
 
 
