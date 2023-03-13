@@ -7,6 +7,7 @@
 
 
 Medical webapp composed by the following microservices :
+
 1. [Patient](https://github.com/HashTucE/Patient.git) is a rest Api that allows you to create, modify or delete clients from a medical practice stored in a mySQL database.
 2. [Note](https://github.com/HashTucE/Note.git) is a rest Api that allows you to create, modify or delete notes to keep track of visits in a mongodb database.
 3. [Assessment](https://github.com/HashTucE/Assessment.git) is a rest api that communicates with Patient and Note to retrieve data to assess the risk for a patient of contracting type 2 diabetes.
@@ -15,6 +16,13 @@ Medical webapp composed by the following microservices :
 
 
 # Install the project with Docker
+
+Knowing that :
+- The 4 microservices's images required are stored into my `Docker Registry`
+- The 2 databases's images required are stored into my `Docker Hub`
+- The Library's package required is stored into my `distant Nexus repository`
+You can follow the 5 steps below, to use straight the application.
+But if you want to use your own images and library, feel free to check my repositories linked above to learn how to do it.
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Clone [Mediscreen](https://github.com/HashTucE/Mediscreen.git) on your local machine.
