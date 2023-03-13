@@ -79,15 +79,10 @@ Medical webapp composed by the following microservices :
   <img src=https://user-images.githubusercontent.com/95872501/224282867-7c9e5771-60ac-4471-8fef-8a19eac6606a.png>
 </p>
 
-
-
-
 # Project Structure
 <p align="center">
-  <img src=https://user-images.githubusercontent.com/95872501/224289216-54e84251-12de-4559-8e5d-bf00b4d46267.png>
+  <img src=https://user-images.githubusercontent.com/95872501/224648604-4607c4f2-610b-4f8c-be34-c115c7220040.png>
 </p>
-
-
 
 # JaCoCo Code Coverage
 <p align="center">
@@ -98,16 +93,13 @@ Medical webapp composed by the following microservices :
   <img src=https://user-images.githubusercontent.com/95872501/224291163-5eeb831c-e47b-4fac-b0a1-89e2e3bdbff4.png>
 </p>
 
-
 <p align="center">
   <img src=https://user-images.githubusercontent.com/95872501/224291291-a5c11169-50e9-4e47-9c6f-a3710221dac7.png>
 </p>
 
-
 <p align="center">
   <img src=https://user-images.githubusercontent.com/95872501/224291384-c99e972a-e7f0-408b-94f7-1d8b180e5e12.png>
 </p>
-
 
 
 # Technology Stack
