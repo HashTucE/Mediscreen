@@ -14,7 +14,7 @@ Medical webapp composed by the following microservices :
 5. [Library](https://github.com/HashTucE/Library.git) groups common objects that will be shared by the repository manager, Nexus.
 
 
-# Install the project with the magic of Docker
+# Install the project with Docker
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Clone [Mediscreen](https://github.com/HashTucE/Mediscreen.git) on your local machine.
